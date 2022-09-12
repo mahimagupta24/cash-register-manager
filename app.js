@@ -8,13 +8,20 @@ const availableNotes = [2000, 500, 100, 20, 10, 5, 1];
 
 checkButton.addEventListener("click", validateBillAndCashAmount);
 
+
 function validateBillAndCashAmount() {
   hideMessage()
-  if((billAmount.value>0) && (cashGiven.value>0)){
-    if(cashGiven.value<billAmount.value){
+  var cash=Number(cashGiven.value);
+var bill=Number(billAmount.value);
+
+  if((bill>0) && (cash>0)){
+    if(cash<bill){
       showMessage("Do you wanna wash plates?", "orange");
-     }else{
-      const amountToBeReturned = cashGiven.value-billAmount.value;
+     }else if(bill==cash){
+      showMessage("Thanks for paying the cash exactly equals to bill amount.","blue")
+     }
+     else{
+      const amountToBeReturned = (cash-bill);
     calculateChange(amountToBeReturned);
   } 
   
