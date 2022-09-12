@@ -17,12 +17,6 @@ body{
 .description{
     font-size: larger;
 }
-.input,label{
-    display:block;
-    font-size: large;
-    text-align: left;
-    padding-left: 1.5rem;
-}
 input{
     padding:1rem 1rem;
     font-size: 20px;
@@ -30,6 +24,13 @@ input{
      border:2px solid darkgreen ;
     border-radius: 0.5rem; 
 }
+input,label{
+    font-size:large;
+    padding-left:1.5rem;
+    text-align: left;
+
+}
+
 #check-button{
     border:none;
     display:block;
@@ -40,6 +41,7 @@ input{
     background-color: darkgreen;
     color:white;
 }
+
 #error-message{
     font-size: larger;
 }
