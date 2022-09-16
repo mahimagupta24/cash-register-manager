@@ -67,7 +67,7 @@ footer {
   }
   footer p{
     text-align:center;
-    font-size: x-large;
+    font-size: xx-large;
   }
 img{
     width:40px;
@@ -76,6 +76,6 @@ a,
 img,
 li {
   display: inline;
-  padding-inline-end: 0.6rem;
+  padding-inline-end: 0.4rem;
   
 }
