@@ -26,7 +26,8 @@ function validateBillAndCashAmount() {
       const amountToBeReturned = cash - bill;
       calculateChange(amountToBeReturned);
     }
-  } else {
+  }
+   else {
     showMessage("Invalid bill amount", "red");
   }
 }
